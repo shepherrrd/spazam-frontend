@@ -9,9 +9,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        min-height: 100vh;
         margin: 0;
         background-color: #f0f0f0;
+      }
+      #app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 600px;
+        padding: 20px;
       }
       #logo {
         width: 150px;
@@ -37,9 +45,19 @@
         100% { transform: scale(1); }
       }
       #status {
-        text-align: center;
         margin-top: 20px;
         font-size: 18px;
+      }
+      #song-list {
+        margin-top: 20px;
+        width: 100%;
+      }
+      #song-list ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      #song-list li {
+        margin-bottom: 10px;
       }
       .toast {
         position: fixed;
