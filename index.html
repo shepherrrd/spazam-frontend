@@ -63,6 +63,15 @@
         <img src="spazam.png" alt="Song Finder Logo" />
       </div>
       <div id="status"></div>
+      <div id="song-list">
+        <h3>Songs in the Database:</h3>
+        <ul>
+          <li>Asake - Remember</li>
+          <li>Asake - Fuji vibe</li>
+          <li>Asake - Active ft Travis Scott</li>
+          <li>Kendrick Lamar - Not Like Us</li>
+        </ul>
+      </div>
     </div>
     <div id="toast" class="toast"></div>
 
@@ -70,7 +79,7 @@
       const logo = document.getElementById('logo');
       const status = document.getElementById('status');
       const toast = document.getElementById('toast');
-        const url = 'https://localhost:7142'
+        const url = 'https://spazam.onrender.com'
       logo.addEventListener("click", async () => {
         logo.classList.add('listening');
         status.textContent = 'Listening...';
